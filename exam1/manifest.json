@@ -1,0 +1,19 @@
+{
+    "name": "click",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "I Love Flutter ~~！",
+    "browser_action": {
+      "default_icon": "1.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["file:///D:/BaiduSyncdisk/py_proje/11_15%20js/exam1/count.html","http://www.csdn.net/*"],
+        "js": ["script.js"]
+      },
+      {
+        "matches": ["https://www.baidu.com/"],
+        "js": ["script3.js"]
+      }
+    ]
+  }
